@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chengxusheji.domain">
+
+	<class name="Flzs" table="Flzs">
+
+          <!-- 主键记录id -->
+          <id name="zsId" column="zsId">
+            <generator class="native"/>
+          </id>
+
+          <!-- 简单字符串属性: 知识标题 -->
+          <property
+            name="title"
+            column="title"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单图片属性: 知识图片 -->
+          <property
+            name="zsPhoto"
+            column="zsPhoto"
+            type="string"
+            length="50"
+          />
+
+          <!-- 简单字符串属性: 知识简介 -->
+          <property
+            name="zsDesc"
+            column="zsDesc"
+            type="string"
+            length="4000"
+          />
+
+          <!-- 简单字符串属性: 作者 -->
+          <property
+            name="author"
+            column="author"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 出版社 -->
+          <property
+            name="publish"
+            column="publish"
+            type="string"
+            length="30"
+          />
+
+          <!-- 简单日期型属性: 出版日期 -->
+          <property
+            name="publishDate"
+            column="publishDate"
+            	type="timestamp"
+            	length="10"
+          />
+
+          <!-- 简单整型属性: 阅读量 -->
+          <property
+            name="viewNum"
+            column="viewNum"
+            type="int"
+
+          />
+
+          <!-- 简单图片属性: 知识文件 -->
+          <property
+            name="zsFile"
+            column="zsFile"
+            type="string"
+            length="50"
+          />
+
+
+		 
+		
+	</class>
+	
+</hibernate-mapping>
+ 
